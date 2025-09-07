@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile - Financial Management</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #0077b6;
+      padding: 1em;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      margin: 0 15px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #90e0ef;
+    }
+
+    header {
+      text-align: center;
+      margin: 2em 0;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #023e8a;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .profile-pic {
+      display: block;
+      margin: 0 auto 1em;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #0077b6;
+    }
+
+    .profile-item {
+      display: flex;
+      align-items: center;
+      margin: 1em 0;
+    }
+
+    .label-box {
+      background-color: #0077b6;
+      color: white;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-right: 1em;
+      min-width: 120px;
+      text-align: center;
+    }
+
+    .profile-item input {
+      flex: 1;
+      padding: 0.5em 0.8em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .edit-btn {
+      display: block;
+      width: 150px;
+      margin: 1.5em auto 0;
+      padding: 0.5em 0;
+      text-align: center;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+
+    .edit-btn:hover {
+      background-color: #023e8a;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="about.html">ℹ️ About</a></li>
+      <li><a href="contact.html">📞 Contact</a></li>
+      <li><a href="signup.html">👍 Sign Up</a></li>
+      <li><a href="login.html">🔐 Log In</a></li>
+      <li><a href="feedback.html">💬 Feedback</a></li>
+      <li><a href="profile.html">👤 Profile</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Your Profile</h1>
+  </header>
+
+  <main>
+    <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
+
+    <div class="profile-item">
+      <div class="label-box">Name</div>
+      <input type="text" placeholder="Enter your name" value="[User Name]">
+    </div>
+
+    <div class="profile-item">
+      <div class="label-box">Email</div>
+      <input type="email" placeholder="Enter your email" value="[User Email]">
+    </div>
+
+    <div class="profile-item">
+      <div class="label-box">Member since</div>
+      <input type="text" placeholder="Join date" value="[Date]" readonly>
+    </div>
+
+    <button class="edit-btn">Save Changes</button>
+  </main>
+</body>
+</html>

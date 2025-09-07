@@ -1,0 +1,38 @@
+<!-- 🆕 Income Management Section -->
+<section class="income-management" style="padding:20px; max-width:600px; margin:50px auto; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+  <h2 style="text-align:center; color:#2a7f2a;">💵 Income Management</h2>
+
+  <div class="form-group" style="margin-bottom:10px;">
+    <label>Source</label>
+    <input type="text" id="income-source" placeholder="e.g. Salary, Freelance" style="width:100%; padding:8px; border-radius:8px; border:1px solid #ccc;">
+  </div>
+
+  <div class="form-group" style="margin-bottom:10px;">
+    <label>Amount</label>
+    <input type="number" id="income-amount" placeholder="e.g. 1000" style="width:100%; padding:8px; border-radius:8px; border:1px solid #ccc;">
+  </div>
+
+  <div class="form-group" style="margin-bottom:10px;">
+    <label>Date</label>
+    <input type="date" id="income-date" style="width:100%; padding:8px; border-radius:8px; border:1px solid #ccc;">
+  </div>
+
+  <div class="form-group" style="margin-bottom:10px;">
+    <label>Type</label>
+    <select id="income-type" style="width:100%; padding:8px; border-radius:8px; border:1px solid #ccc;">
+      <option value="One-time">One-time</option>
+      <option value="Recurring">Recurring</option>
+    </select>
+  </div>
+
+  <button onclick="addIncome()" style="width:100%; background:#2a7f2a; color:white; font-weight:bold; border:none; border-radius:8px; padding:10px; cursor:pointer;">
+    Add Income
+  </button>
+
+  <h3 style="margin-top:20px;">Income Records</h3>
+  <ul id="income-list" style="list-style:none; padding:0;"></ul>
+
+  <div style="text-align:center; font-weight:bold; font-size:18px; margin-top:15px;">
+    Total Income: $<span id="income-total-display">0</span>
+  </div>
+</section>
